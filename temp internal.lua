@@ -5391,7 +5391,7 @@ local function randomgen(length)
 end
 
 local loadstring = newcclosure(function(source)
-	fenv.script = Instance.new("LocalScript", script_context)
+	fenv.script = Instance.new("ModuleScript", script_context)
 
 	local executable
 	local ran, failureReason = pcall(function()
