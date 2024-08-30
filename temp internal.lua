@@ -5722,7 +5722,7 @@ local function NVFZZME_script()
 		if (script.Parent.Parent.EDITOR.Text == "") then
 			error("Error occurred, no output from Lua.")
 		else
-			loadstring(script.Parent.Parent.EDITOR.Text)
+			loadstring(script.Parent.Parent.EDITOR.Text)()
 		end
 	end)
 end
